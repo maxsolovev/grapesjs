@@ -634,6 +634,10 @@ const Component = Backbone.Model.extend(Styleable).extend(
 
       if (!model.get('toolbar')) {
         var tb = [];
+        tb.push({
+          attributes: { class: 'fa fa-code' },
+          command: 'tlb-template-save'
+        });
         if (model.collection) {
           tb.push({
             attributes: { class: 'fa fa-arrow-up' },
